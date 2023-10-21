@@ -66,13 +66,8 @@
     height: 100%;
   }
 
-  .button-whats {
-    font-size: 0.9rem;
-    width: 10rem;
-    height: 48px;
-    gap: 4px;
-  }
 }
+
 
 /* Estilização menu */
 
@@ -84,6 +79,15 @@
 
 .menu li {
   display: inline-block;
+}
+
+.menu a:hover{
+  color: var(--rosa-button);
+  transition: 0.3s;
+}
+
+.dropdown-menu li {
+  margin-bottom: 8px;
 }
 
 .menu li a {
@@ -99,13 +103,25 @@
 }
 
 [data-dropdown] .dropdown-menu {
-  display: none;
+  display: none; 
+  /* none padrao */
 }
 
 [data-dropdown]:hover .dropdown-menu,
 [data-dropdown].active .dropdown-menu {
   display: block;
   animation: show-up 0.3s forwards;
+  width: 300px;
+}
+
+[data-dropdown].active .dropdown-menu li{
+  display: block;
+
+}
+
+
+.menu-button{
+  display: none;
 }
 
 @keyframes show-up {
@@ -151,4 +167,102 @@
 
 .dropdown-menu li a:hover {
   color: var(--rosa-button);
+}
+
+.hamburguer-nav {
+  display: none;
+}
+
+
+.carousel{
+  background-image: url("../img/img-carousel.jpg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.carousel h1{
+  color: var(--white);
+  z-index: 999;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 3rem;
+}
+
+.carousel p{
+  color: var(--white);
+  z-index: 999;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu{
+    display: none;
+    /* position: absolute; */
+    top: 150px;
+    left: 0;
+    background-color: var(--azul2);
+    padding: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+   
+  
+  }
+
+  .menu.ativo {
+    display: flex; /* Mostra o menu quando a classe "ativo" é aplicada */
+    flex-direction: column;
+    animation: desceMenu 0.3s forwards;
+    margin: 0px;
+    top: 80px;
+  }
+
+  .menu li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 8px;
+  }
+
+  @keyframes desceMenu {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+
+  }
+
+  .hamburguer-nav {
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .hamburguer-nav.ativo {
+    transform: rotate(90deg);
+  }
+
+
+  .carousel h1{
+    padding-top: 50px ;
+    font-size: 1.8rem;
+  }
+
+  .carousel p{
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+
+  .header-button{
+    display: none;
+  }
+
+  .menu-button{
+    display: flex;
+  }
+  
+
 }

@@ -1,5 +1,6 @@
 .promocional-infantil {
   margin-top: 60px;
+  background-color: var(--azul-fundo);
 }
 
 .promocional-infantil,
@@ -11,7 +12,7 @@
 
 .promocional-infantil-icone,
 .promocional-casamento-icone {
-  background-color: var(--azul2);
+  background-color: var(--azul-fundo);
 }
 
 .promocional-infantil-icone img,
@@ -29,8 +30,8 @@
 
 .promocional-infantil-caixa {
   position: absolute;
-  right: 570px;
-  top: 60px;
+  right: 850px;
+  top: 65px;
   padding: 60px;
   border-radius: 5px;
   width: 650px;
@@ -39,8 +40,8 @@
 
 .promocional-casamento-caixa {
   position: absolute;
-  right: 100px;
-  top: 60px;
+  right: 400px;
+  top: 65px;
   padding: 60px;
   border-radius: 5px;
   width: 650px;
@@ -63,6 +64,36 @@
   padding: 20px;
   width: 16rem;
   font-size: 1rem;
+}
+
+@media (max-width: 1600px){
+  .promocional-infantil-caixa {
+    right: 650px;
+  }
+  
+  .promocional-casamento-caixa {
+    right: 200px;
+  }
+}
+
+@media (max-width: 1260px){
+  .promocional-infantil-caixa {
+    right: 550px;
+  }
+  
+  .promocional-casamento-caixa {
+    right: 100px;
+  }
+}
+
+@media (max-width: 900px){
+  .promocional-infantil-caixa {
+    right: 650px;
+  }
+  
+  .promocional-casamento-caixa {
+    right: 100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -95,3 +126,4 @@
     width: 100%;
   }
 }
+

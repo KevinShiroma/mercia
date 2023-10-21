@@ -37,13 +37,18 @@
         <div class="logo">
           <a href="index.html"><img src="./img/logo-header.svg" alt="logotipo"></a>
         </div> <!--logo-->
-        <a class="button-whats" href="#">WHATSAPP <img src="./img/arrow-button.svg"> </a>
+        <a class="button-whats header-button" href="#">WHATSAPP <img src="./img/arrow-button.svg"> </a>
+        <div class="hamburguer-nav">
+          <img src="./img/hamburguer-menu.svg" alt="">
+        </div>
       </div> <!--container logo-section-->
     </div> <!--logo-section-bg-->
 
-    <div class="container">
+    <div class="">
+
       <nav>
-        <ul class="menu">
+        <ul class="menu container">
+          <a class="button-whats menu-button" href="#">WHATSAPP <img src="./img/arrow-button.svg"> </a>
           <li><a href="#">Sobre</a></li>
           <li data-dropdown>
             <a href="decoracoes.html">Decorações</a>
@@ -67,52 +72,60 @@
             </ul>
           </li>
           <li data-dropdown>
-            <a href="">Pacotes</a>
+            <a href="">Pacotes </a>
+            <img src="./img/flecha-dropdown.svg" alt="">
             <img src="#" alt="">
             <ul class="dropdown-menu">
               <li><a href="decoraçõeslocações.html">Decoração+Locação</a></li>
-              <li><a href="locação.html">3 Tipos de Locação</a></li>  
+              <li><a href="locação.html">3 Tipos de Locação</a></li>
             </ul>
           </li>
-          <li data-dropdown>
-            <a href="">Depoimentos</a>
-            <img src="#" alt="">
-            <ul class="dropdown-menu">
-              <li><a href="depoimentos.html">Depoimento de Clientes</a></li>
-            </ul>
-          </li>
+          <li><a href="#">Depoimentos</a></li>
+
         </ul>
+        </li>
+        </ul>
+
       </nav>
     </div>
   </header>
 
   <section class="carousel">
-    <img src="./img/img-carousel.jpg" alt="">
-
+    <div class="container">
+      <h1>Realize a festa que merece</h1>
+      <p>Há mais de X anos realizando sonhos</p>
+    </div>
   </section>
 
   <section class="categorias-section container">
     <h1>CATEGORIAS</h1>
-    <img class="separador" src="./img/separador.svg" alt="">
     <div class="categorias">
       <div class="infantil-categorias">
-        <img src="./img/infantil-categorias.jpg" alt="">
-        <span>Infantil</span>
+        <a href="#">
+          <img src="./img/infantil-categorias.jpg" alt="">
+          <span>Infantil</span>
+        </a>
       </div>
 
       <div class="casamento-categorias">
-        <img src="./img/casamento-categorias.jpg" alt="">
-        <span>Casamento</span>
+        <a href="#">
+          <img src="./img/casamento-categorias.jpg" alt="">
+          <span>Casamento</span>
+        </a>
       </div>
 
       <div class="tematico-categorias">
-        <img src="./img/tematica-categorias.jpg" alt="">
-        <span>Temático</span>
+        <a href="#">
+          <img src="./img/tematica-categorias.jpg" alt="">
+          <span>Temático</span>
+        </a>
       </div>
 
       <div class="corporativo-categorias">
-        <img src="./img/corporativo-categorias.jpg" alt="">
-        <span>Corporativo</span>
+        <a href="#">
+          <img src="./img/corporativo-categorias.jpg" alt="">
+          <span>Corporativo</span>
+        </a>
       </div>
 
     </div> <!--categorias-->
@@ -149,35 +162,60 @@
   </section>
 
   <section class="contato">
-    <div class="contato-bg">
+    <div class="container">
       <span class="contato-titulo">Faça a sua festa dos sonhos</span>
-      <span class="contato-paragrafo">Lorem ipsum dolor sit amet consectetur. Vestibulum phasellus proin quis convallis integer. Pulvinars</span>
+      <span class="contato-paragrafo">Agilize seu orçamento enviando o contato abaixo!</span>
     </div>
 
-    <div class="formulario">
+    <div class="formulario container">
       <form action="">
+
         <div class="nome-form">
           <label for="name">Nome</label>
           <input type="text" id="name" name="nome" placeholder="Coloque seu nome" required>
         </div>
+
         <div class="email-form">
           <label for="email">Email</label>
           <input type="email" id="email" name="email">
         </div>
+
         <div class="cel-form">
           <label for="celular">Celular</label>
           <input type="text" id="celular" name="celular" placeholder="(11) 99999-9999" required>
         </div>
+
         <div class="data-form">
           <label for="data">Data</label>
           <input type="date" id="data" name="data" required>
         </div>
+
+        <div class="tema-form">
+          <label for="tema">Tema</label>
+          <select id="tema" name="tema" required>
+            <option disabled selected value="selecionar">Selecione o tema </option>
+            <option value="infantl">Infantil</option>
+            <option value="casamento">Casamento</option>
+            <option value="tematico">Temático</option>
+            <option value="coroprativo">Corporativo</option>
+          </select>
+        </div>
+
+        <div class="hora-form">
+          <label for="hora-desejada">Hora desejada</label>
+          <input type="time" id="hora-desejada" name="hora-desejada" required>
+        </div>
+
+
         <div class="mensagem-form">
           <label for="mensagem">Mensagem</label>
           <textarea rows="10" name="mensagem" id="mensagem" placeholder="Diga a temática que gostaria pra sua festa" required></textarea>
         </div>
+
         <button class="button-whats botao-contato" href="#">Enviar Mensagem <img src="./img/arrow-button.svg"> </button>
+
       </form>
+
     </div>
   </section>
 

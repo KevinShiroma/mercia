@@ -3,11 +3,14 @@
   --white: #ffffff;
   --azul1: #97baff;
   --azul2: #e8f0ff;
+  --azul-fundo: #E8F0FF;
   --fundoclaro: #f3f7ff;
   --cinzaclaro: #9c9c9c;
   --azulparagrafo: #192229;
   --rosa-button: #ee74e9;
+  --rosa-hover: #A952A5;
   --cinza1: #545454;
+
 }
 
 * {
@@ -72,4 +75,22 @@ dd {
   gap: 8px;
   flex-shrink: 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-whats:hover {
+  background-color: var(--rosa-hover);
+}
+
+@media (max-width: 768px) {
+
+  .button-whats {
+    font-size: 0.9rem;
+    width: 10rem;
+    height: 48px;
+    gap: 4px;
+
+  }
+
+
 }
