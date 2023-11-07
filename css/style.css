@@ -22,3 +22,9 @@
 
 /* Estilização da página sobre */
 @import url("./sobre.css");
+
+/* Estilização da política de privacidade e Termos de Uso */
+@import url("./politicas.css");
+
+/* Estilização da página de locação */
+@import url("./locação.css");
